@@ -1,0 +1,39 @@
+/* .home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home_leftBar {
+  width: 100%;
+}
+
+.home_main {
+  width: 100%;
+  background-color: var(--c-black);
+  margin: auto;
+}
+
+.home_rightBar {
+  background-color: var(--c-green);
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .home {
+    flex-direction: row;
+  }
+
+  .home_rightBar {
+    display: block;
+    width: 23%;
+  }
+
+  .home_main {
+    width: 50%;
+  }
+
+  .home_leftBar {
+    width: 23%;
+    background-color: var(--c-primary);
+  }
+} */

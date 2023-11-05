@@ -1,0 +1,77 @@
+.DetailUserPost_content_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.DetailUserPost_content_user_img {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 100%;
+  background-color: var(--c-green);
+}
+
+.DetailUserPost_content_user_desc {
+  text-align: center;
+  font-family: var(--font-reg);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+  color: var(--c-white);
+}
+
+.card {
+  width: 90%;
+  margin: 30px auto;
+}
+
+figure img {
+  height: 250px;
+}
+
+.card-body p {
+  font-family: var(--font-reg) !important;
+  font-size: 16px !important;
+}
+
+@media (min-width: 768px) {
+  .DetailUserPost_content {
+    height: 100vh;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .DetailUserPost_content_user_img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .DetailUserPost_content_user_desc {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .DetailUserPost_content {
+    height: 100%;
+  }
+
+  .content {
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+  }
+
+  .content .card {
+    width: 100% !important;
+    height: 300px;
+  }
+}

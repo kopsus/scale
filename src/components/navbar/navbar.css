@@ -1,0 +1,106 @@
+.navbar {
+  position: relative;
+  width: 100%;
+  padding: 0 !important;
+  min-height: 50px !important;
+}
+
+.leftBar {
+  background-color: var(--c-primary);
+  width: 100%;
+  color: var(--c-white);
+  display: flex;
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 0 10%;
+  justify-content: space-between;
+  height: 50px;
+  z-index: 99;
+  border-bottom: 1px solid var(--c-green);
+}
+
+.letfBar_title {
+  order: 2;
+  font-size: 24px;
+  font-family: var(--font-bold);
+}
+
+.leftBar_content {
+  font-family: var(--font-bold);
+  font-size: 20px;
+  order: 1;
+  position: absolute;
+  top: 100%;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  background-color: var(--c-primary);
+  transition: all 200ms;
+  border-right: 1px solid var(--c-green);
+}
+
+.leftBar_content.active {
+  left: 0;
+}
+
+.leftBar_content.inactive {
+  left: -100%;
+}
+
+.leftBar_content_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+  font-family: var(--font-reg);
+  padding: 5px 10px;
+}
+
+.leftBar_content_item p {
+  font-size: 20px;
+}
+
+.leftBar_content_item.active {
+  border-radius: 5px;
+  background-color: var(--c-white);
+  color: var(--c-black);
+}
+
+@media (min-width: 768px) {
+  .leftBar_content_item {
+    width: 66%;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .leftBar {
+    padding: 0 5%;
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .leftBar_content.inactive {
+    left: 0;
+    width: 23%;
+  }
+
+  .leftBar_content {
+    padding-top: 50px;
+  }
+
+  .leftBar_content_item:hover {
+    border-radius: 5px;
+    background-color: var(--c-white);
+    color: var(--c-black);
+  }
+}

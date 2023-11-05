@@ -1,0 +1,86 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--c-primary);
+  font-family: var(--font-reg);
+}
+
+form {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.card {
+  margin: auto;
+  width: 90%;
+}
+
+.card-body p:nth-child(1) {
+  font-size: 20px;
+  font-family: var(--font-bold);
+}
+
+.card-body p:nth-child(2) {
+  font-size: 16px;
+  font-family: var(--font-medium);
+}
+
+.card-title {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-actions {
+  gap: 10px !important;
+}
+
+.card-actions button {
+  margin-top: 20px;
+  background-color: var(--c-blue);
+  color: var(--c-white);
+}
+
+.card-actions button:hover {
+  margin-top: 20px;
+  background-color: var(--hoverBlue);
+  color: var(--c-white);
+}
+
+.card-actions p {
+  font-size: 12px;
+}
+
+.card-actions p a {
+  font-family: var(--font-bold);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 70%;
+  }
+
+  .card-actions {
+    gap: 10px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 40% !important;
+  }
+
+  .card-body p:nth-child(1) {
+    font-size: 32px;
+  }
+
+  .card-body p:nth-child(2) {
+    font-size: 24px;
+  }
+
+  .card-actions p {
+    font-size: 16px;
+  }
+}

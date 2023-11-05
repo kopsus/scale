@@ -1,0 +1,40 @@
+.following {
+  position: relative;
+  width: 100%;
+  color: var(--c-white);
+}
+
+.rightBar {
+  padding: 20px;
+}
+
+.rightBar_content p {
+  font-family: var(--font-medium);
+  font-size: 20px;
+}
+
+.rightBar_content input {
+  width: 100%;
+  margin: 10px 0 30px;
+  color: var(--c-black);
+}
+
+.rightBar_user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0 0 25px;
+  cursor: pointer;
+}
+
+.rightBar_user_img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.rightBar_user_desc {
+  font-family: var(--font-reg);
+  font-size: 14px;
+}
